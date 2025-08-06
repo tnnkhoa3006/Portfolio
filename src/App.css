@@ -1,0 +1,19 @@
+/* App.css */
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(215,230,240);
+  color: black;
+}
+
+/* chỉ khi class dark được thêm vào chính #root */
+#root.dark {
+  background-color: black;
+  color: white;
+}
+
+/* background color of input background-color: rgb(215,230,240); */
+input,
+textarea, label {
+  background-color: rgb(215, 230, 240);
+}
