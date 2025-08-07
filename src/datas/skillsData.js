@@ -11,25 +11,19 @@ const skillsData = {
   ],
   librariesFrameworks: [
     "React",
-    "React Native (Expo and Bare)",
     "NextJs",
     "Express JS",
     "Redux/RTK Query",
-    "Strapi Headless CMS",
   ],
   frontendCssLibrary: [
     "HTML/CSS",
-    "SASS",
     "Material-UI",
     "Tailwind CSS",
     "Bootstrap",
-    "Native Base",
-    "Mantine",
   ],
   otherSkillsTools: [
     "Git/Github",
     "VS Code",
-    "XCode",
     "Android Studio",
     "MongoDB Compass",
   ],
@@ -54,9 +48,8 @@ const skillsData = {
     "WebSocket",
   ],
   communicationLanguages: [
-    "Bengali (Native)",
+    "Vietnamese (Native)",
     "English (fluent speaker)",
-    "Hindi/Urdu (fluent speaker)",
   ],
 };
 
