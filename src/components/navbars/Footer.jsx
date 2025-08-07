@@ -36,7 +36,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="Facebook"
                         >
-                            <Icon name="FaFacebook" className="w-6 h-6 sm:w-8 sm:h-8 hover:text-rose-500 transition-colors" />
+                            <Icon name="FaFacebook" />
                         </a>
                         <a
                             href="https://github.com/tnnkhoa3006"
@@ -44,7 +44,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="GitHub"
                         >
-                            <Icon name="FaGithub" className="w-6 h-6 sm:w-8 sm:h-8 hover:text-rose-500 transition-colors" />
+                            <Icon name="FaGithub" />
                         </a>
                         <a
                             href="https://www.instagram.com/kt_jayit/"
@@ -52,7 +52,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="Instagram"
                         >
-                            <Icon name="FaInstagram" className="w-6 h-6 sm:w-8 sm:h-8 hover:text-rose-500 transition-colors" />
+                            <Icon name="FaInstagram" />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/khoa-tr%E1%BA%A7n-b10b86374/"
@@ -60,7 +60,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
                         >
-                            <Icon name="FaLinkedin" className="w-6 h-6 sm:w-8 sm:h-8 hover:text-rose-500 transition-colors" />
+                            <Icon name="FaLinkedin" />
                         </a>
                         {/* Removed empty Twitter link */}
                     </div>
