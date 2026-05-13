@@ -12,8 +12,25 @@
   color: white;
 }
 
-/* background color of input background-color: rgb(215,230,240); */
+/* background color of input */
 input,
 textarea, label {
   background-color: rgb(215, 230, 240);
+}
+
+#root.dark input,
+#root.dark textarea,
+#root.dark label {
+  background-color: #27272a;
+  color: white;
+}
+
+svg {
+  color: black;
+  fill: black;
+}
+
+#root.dark svg {
+  color: white;
+  fill: white;
 }

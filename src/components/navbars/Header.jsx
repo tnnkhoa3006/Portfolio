@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import LogoLight from '../../assets/logos/Union.png';
 import LogoDark from '../../assets/logos/UnionDark.png';
 import NavLink from './NavLink';
 import Icon from '../icons/Icon.jsx';
 import { useNavigate } from 'react-router-dom';
+import { useTheme } from '../../contexts/ThemeContext';
 
 const Header = () => {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isDark, setIsDark } = useTheme();
 
   return (
     <div className="w-full fixed top-0 h-16 dark:bg-zinc-900 flex items-center z-50">
@@ -17,7 +20,7 @@ const Header = () => {
               navigate('/');
               setIsMenuOpen(false);
             }}
-            src={LogoDark}
+            src={isDark ? LogoLight : LogoDark}
             alt="Logo"
             className="h-6 w-6 sm:h-8 sm:w-8 cursor-pointer"
             loading="lazy"
@@ -30,16 +33,17 @@ const Header = () => {
         <div className="sm:hidden">
           <Icon
             name={isMenuOpen ? 'FaTimes' : 'FaBars'}
-            className="w-6 h-6 cursor-pointer hover:text-rose-500 transition-colors"
+            className="w-6 h-6 cursor-pointer text-black dark:text-white hover:text-rose-500 transition-colors"
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           />
         </div>
         <div className="hidden sm:flex">
           <Icon
-            name="FaCog"
-            className="w-6 h-6 sm:w-8 sm:h-8 cursor-pointer hover:text-rose-500 transition-colors"
-            aria-label="Settings"
+            name={isDark ? 'FaSun' : 'FaMoon'}
+            className="w-6 h-6 sm:w-8 sm:h-8 cursor-pointer text-black dark:text-white hover:text-rose-500 transition-colors"
+            aria-label="Toggle dark mode"
+            onClick={() => setIsDark(prev => !prev)}
           />
         </div>
         <div

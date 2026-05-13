@@ -7,10 +7,10 @@ const BoxLink = ({ icon, title, link }) => {
             target="_blank"
             rel="noopener noreferrer"
             href={link}
-            className='flex w-fit items-center gap-2 cursor-pointer border-[1px] border-rose-500 rounded-lg p-2 hover:bg-rose-500 hover:text-white transition-all duration-300 no-underline'
+            className='flex w-fit items-center gap-2 cursor-pointer border-[1px] border-rose-500 rounded-lg p-2 hover:bg-rose-500 hover:text-white transition-all duration-300 no-underline text-black dark:text-white'
         >
-            <Icon name={icon} className='text-2xl' color='gray' />
-            <span className='hover:text-white text-black font-mono font-semibold'>{title}</span>
+            <Icon name={icon} className='text-2xl dark:text-white' />
+            <span className='hover:text-white dark:text-white font-mono font-semibold'>{title}</span>
         </a>
     )
 }

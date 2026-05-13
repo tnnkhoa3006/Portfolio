@@ -8,7 +8,7 @@ const SkillCard = ({ title, skills }) => {
                 {skills.map((skill, index) => (
                     <span
                         key={index}
-                        className="bg-rose-50 text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-full font-mono"
+                        className="bg-rose-50 dark:bg-rose-900/30 text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-full font-mono"
                     >
                         {skill}
                     </span>

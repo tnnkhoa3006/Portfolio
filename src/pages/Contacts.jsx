@@ -69,7 +69,7 @@ const Contacts = () => {
                                                 onChange={handleChange}
                                                 onFocus={() => handleFocus('name')}
                                                 onBlur={handleBlur}
-                                                className="w-full p-3 sm:p-4 border-[2px] border-rose-300 text-gray-700 focus:outline-none focus:border-rose-500 rounded-md"
+                                                className="w-full p-3 sm:p-4 border-[2px] border-rose-300 text-gray-700 dark:text-gray-200 focus:outline-none focus:border-rose-500 rounded-md"
                                             />
                                             <label
                                                 className={`absolute left-3 px-1 text-gray-500 transition-all duration-200 pointer-events-none ${isActive('name') ? 'top-[-0.75rem] text-xs sm:text-sm text-rose-500' : 'top-3 sm:top-4 text-sm sm:text-base'
@@ -87,7 +87,7 @@ const Contacts = () => {
                                                 onChange={handleChange}
                                                 onFocus={() => handleFocus('email')}
                                                 onBlur={handleBlur}
-                                                className="w-full p-3 sm:p-4 border-[2px] border-rose-300 text-gray-700 focus:outline-none focus:border-rose-500 rounded-md"
+                                                className="w-full p-3 sm:p-4 border-[2px] border-rose-300 text-gray-700 dark:text-gray-200 focus:outline-none focus:border-rose-500 rounded-md"
                                             />
                                             <label
                                                 className={`absolute left-3 px-1 text-gray-500 transition-all duration-200 pointer-events-none ${isActive('email') ? 'top-[-0.75rem] text-xs sm:text-sm text-rose-500' : 'top-3 sm:top-4 text-sm sm:text-base'
@@ -106,7 +106,7 @@ const Contacts = () => {
                                             onChange={handleChange}
                                             onFocus={() => handleFocus('subject')}
                                             onBlur={handleBlur}
-                                            className="w-full p-3 sm:p-4 border-[2px] border-rose-300 text-gray-700 focus:outline-none focus:border-rose-500 rounded-md"
+                                            className="w-full p-3 sm:p-4 border-[2px] border-rose-300 text-gray-700 dark:text-gray-200 focus:outline-none focus:border-rose-500 rounded-md"
                                         />
                                         <label
                                             className={`absolute left-3 px-1 text-gray-500 transition-all duration-200 pointer-events-none ${isActive('subject') ? 'top-[-0.75rem] text-xs sm:text-sm text-rose-500' : 'top-3 sm:top-4 text-sm sm:text-base'
@@ -124,7 +124,7 @@ const Contacts = () => {
                                             onChange={handleChange}
                                             onFocus={() => handleFocus('message')}
                                             onBlur={handleBlur}
-                                            className="w-full p-3 sm:p-4 border-[2px] border-rose-300 text-gray-700 focus:outline-none focus:border-rose-500 rounded-md resize-none"
+                                            className="w-full p-3 sm:p-4 border-[2px] border-rose-300 text-gray-700 dark:text-gray-200 focus:outline-none focus:border-rose-500 rounded-md resize-none"
                                         />
                                         <label
                                             className={`absolute left-3 px-1 text-gray-500 transition-all duration-200 pointer-events-none ${isActive('message') ? 'top-[-0.75rem] text-xs sm:text-sm text-rose-500' : 'top-3 sm:top-4 text-sm sm:text-base'
@@ -137,7 +137,7 @@ const Contacts = () => {
                                     <div>
                                         <button
                                             type="submit"
-                                            className="px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base text-gray-800 font-mono font-medium uppercase tracking-wide border-[2px] border-rose-500 rounded-md hover:bg-rose-500 hover:text-white focus:outline-none transition-all duration-300"
+                                            className="px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base text-gray-800 dark:text-white font-mono font-medium uppercase tracking-wide border-[2px] border-rose-500 rounded-md hover:bg-rose-500 hover:text-white focus:outline-none transition-all duration-300"
                                         >
                                             SEND MESSAGE
                                         </button>

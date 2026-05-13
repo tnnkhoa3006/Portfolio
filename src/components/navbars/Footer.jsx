@@ -1,29 +1,32 @@
 import React from 'react';
+import LogoLight from '../../assets/logos/Union.png';
 import LogoDark from '../../assets/logos/UnionDark.png';
 import Icon from '../icons/Icon';
+import { useTheme } from '../../contexts/ThemeContext';
 
 const Footer = () => {
+    const { isDark } = useTheme();
     return (
         <div className="mt-12 sm:mt-16 md:mt-20 px-4 sm:px-8 md:px-16">
             <div className="flex flex-col md:flex-row gap-6">
                 <div className="w-full md:w-1/2">
                     <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 p-4">
                         <div className="flex items-center space-x-2">
-                            <img src={LogoDark} alt="Logo" className="h-6 w-6 sm:h-8 sm:w-8" />
-                            <h1 className="text-base sm:text-lg md:text-xl font-bold">Khoa</h1>
+                            <img src={isDark ? LogoLight : LogoDark} alt="Logo" className="h-6 w-6 sm:h-8 sm:w-8" />
+                            <h1 className="text-base sm:text-lg md:text-xl font-bold dark:text-white">Khoa</h1>
                         </div>
                         <a
-                            className="font-mono no-underline text-black text-sm sm:text-base md:text-lg font-medium"
-                            href="http://localhost:5173/"
+                            className="font-mono no-underline text-black dark:text-white text-sm sm:text-base md:text-lg font-medium"
+                            href="https://portfolio-kt30604.vercel.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            http://localhost:5173/
+                            portfolio-kt30604
                         </a>
                     </div>
                     <div>
                         <p className="font-mono mt-2 sm:ml-4 text-sm sm:text-base">
-                            Frontend Engineer & React Native developer based in Bangladesh
+                            Frontend Engineer & React Native developer based in Viet Nam
                         </p>
                     </div>
                 </div>
@@ -36,7 +39,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="Facebook"
                         >
-                            <Icon name="FaFacebook" />
+                            <Icon name="FaFacebook" className="text-black dark:text-white" />
                         </a>
                         <a
                             href="https://github.com/tnnkhoa3006"
@@ -44,7 +47,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="GitHub"
                         >
-                            <Icon name="FaGithub" />
+                            <Icon name="FaGithub" className="text-black dark:text-white" />
                         </a>
                         <a
                             href="https://www.instagram.com/kt_jayit/"
@@ -52,7 +55,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="Instagram"
                         >
-                            <Icon name="FaInstagram" />
+                            <Icon name="FaInstagram" className="text-black dark:text-white" />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/khoa-tr%E1%BA%A7n-b10b86374/"
@@ -60,7 +63,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
                         >
-                            <Icon name="FaLinkedin" />
+                            <Icon name="FaLinkedin" className="text-black dark:text-white" />
                         </a>
                         {/* Removed empty Twitter link */}
                     </div>

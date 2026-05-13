@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageWebBook from '../assets/projects/webook.jpg';
 import ImageInstagramClone from '../assets/projects/instagram-clone.png';
+import ImagePixly from '../assets/projects/pixly.png';
 
 const ProjectData = [
     {
@@ -35,6 +36,22 @@ const ProjectData = [
             "socket.io",
             "Cloudinary",
             "webRTC",
+        ],
+    },
+    {
+        title: "Pixly",
+        description: "A professional pixel art & animation editor that runs on both web and desktop (Tauri v2). Supports multi-layer drawing, frame-by-frame animation, onion skinning, and high-quality GIF export.",
+        linkdemo: "",
+        linkgithub: "https://github.com/tnnkhoa3006/pixly",
+        image: ImagePixly,
+        technologies: [
+            "React",
+            "TypeScript",
+            "Vite",
+            "Zustand",
+            "Tauri v2",
+            "Rust",
+            "CSS",
         ],
     }
 ];

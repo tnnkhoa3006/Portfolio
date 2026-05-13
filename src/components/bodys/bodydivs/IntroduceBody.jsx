@@ -19,7 +19,7 @@ const IntroduceBody = () => {
                         </p>
                         <div
                             onClick={() => navigate('/contacts')}
-                            className="w-fit flex items-center gap-2 cursor-pointer border-[1px] border-rose-500 rounded-lg p-3 sm:p-4 hover:bg-rose-500 hover:text-white transition-all duration-300"
+                            className="w-fit flex items-center gap-2 cursor-pointer border-[1px] border-rose-500 rounded-lg p-3 sm:p-4 hover:bg-rose-500 hover:text-white transition-all duration-300 dark:text-white"
                         >
                             <PhoneIcon className="text-lg sm:text-xl" />
                             <span className="text-sm sm:text-base">CONTACT ME !!</span>
@@ -33,7 +33,7 @@ const IntroduceBody = () => {
                     <div className="w-fit mt-4">
                         <div className="flex gap-2 p-3 items-center border-[1px] border-rose-500">
                             <div className="w-5 h-5 bg-rose-500"></div>
-                            <div className="flex gap-1 text-base sm:text-lg font-semibold">
+                            <div className="flex gap-1 text-base sm:text-lg font-semibold dark:text-white">
                                 <span>Software Engineer at</span>
                                 <span className="text-rose-500">Freelancer Software</span>
                             </div>
@@ -43,10 +43,10 @@ const IntroduceBody = () => {
             </div>
             <div className="flex justify-center items-center mt-6 sm:mt-10 px-4">
                 <div className="w-full sm:w-2/3 text-center border-[1px] border-rose-500 rounded-3xl p-4 sm:p-6">
-                    <h1 className="text-black font-mono text-base sm:text-lg md:text-xl">
+                    <h1 className="dark:text-white font-mono text-base sm:text-lg md:text-xl">
                         Experience is the name everyone gives to their mistakes
                     </h1>
-                    <p className="text-sm sm:text-base md:text-xl">- Oscar Wilde</p>
+                    <p className="text-sm sm:text-base md:text-xl dark:text-gray-300">- Oscar Wilde</p>
                 </div>
             </div>
         </>

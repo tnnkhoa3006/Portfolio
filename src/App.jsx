@@ -4,6 +4,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import MainLayout from './mainLayout.jsx'
 import Projects from './pages/Projects.jsx'
+import Experience from './pages/Experience.jsx'
 import Contacts from './pages/Contacts.jsx'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="experience" element={<Experience />} />
           <Route path="contacts" element={<Contacts />} />
         </Route>
       </Routes>
